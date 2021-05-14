@@ -14,6 +14,8 @@ const colorStates = {
   "": "red"
 };
 
+const errorModal = document.getElementById("modal");
+ errorModal.classList.add("hidden");
 const articleHearts = document.querySelectorAll(".like-glyph");
 
 function likeCallback(e) {
