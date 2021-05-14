@@ -16,6 +16,7 @@ function likeCallback(e) {
       if (heart.innerText===EMPTY_HEART)
       {
       heart.innerText=FULL_HEART;
+      heart.style.backgrounColor=red;
         
       }
       else {heart.innerText=EMPTY_HEART;
