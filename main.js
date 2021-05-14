@@ -20,8 +20,12 @@ function likeCallback(e) {
  const heart = e.target;
   mimicServerCall("bogusUrl")
     .then(function(serverMessage){
-      heart.innerText = heartStates[heart.innerText];
-      heart.style.color = colorStates[heart.style.color];
+      if (heart.innerText===EMPTY_HEART)
+      {
+      heart.innerText=FULL_HEART;}
+      else {heart.innerText=EMPTY_HEART;}
+      // heart.innerText = heartStates[heart.innerText];
+      // heart.style.color = colorStates[heart.style.color];
     })
     .catch(function(error) {
       const modal = document.getElementById("modal");
@@ -34,14 +38,6 @@ function likeCallback(e) {
 for (const glyph of articleHearts) {
   glyph.addEventListener("click", likeCallback);
 }
- mimicServerCall("bogusUrl")
-    .then(function(serverMessage){
-      if (heart.innerText==FULL_HEART)
-      {
-        heart.innerText==EMPTY_HEART;
-      }
-      }
-
 
 
 
