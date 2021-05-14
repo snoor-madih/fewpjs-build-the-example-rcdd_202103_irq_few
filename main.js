@@ -35,9 +35,9 @@ function likeCallback(e) {
     });
 }
 
-// for (const glyph of articleHearts) {
-//   glyph.addEventListener("click", likeCallback);
-// }
+for (const glyph of articleHearts) {
+  glyph.addEventListener("click", likeCallback);
+}
 
 
 
