@@ -4,15 +4,6 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
-const heartStates = {
-  "♡": "♥",
-  "♥": "♡"
-};
-
-const colorStates = {
-  "red" : "",
-  "": "red"
-};
 
 const errorModal = document.getElementById("modal");
  errorModal.classList.add("hidden");
@@ -24,8 +15,12 @@ function likeCallback(e) {
     .then(function(serverMessage){
       if (heart.innerText===EMPTY_HEART)
       {
-      heart.innerText=FULL_HEART;}
-      else {heart.innerText=EMPTY_HEART;}
+      heart.innerText=FULL_HEART;
+        
+      }
+      else {heart.innerText=EMPTY_HEART;
+        
+      }
     })
     .catch(function(error) {
       const modal = document.getElementById("modal");
