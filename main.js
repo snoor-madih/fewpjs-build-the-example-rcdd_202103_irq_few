@@ -24,8 +24,6 @@ function likeCallback(e) {
       {
       heart.innerText=FULL_HEART;}
       else {heart.innerText=EMPTY_HEART;}
-      // heart.innerText = heartStates[heart.innerText];
-      // heart.style.color = colorStates[heart.style.color];
     })
     .catch(function(error) {
       const modal = document.getElementById("modal");
